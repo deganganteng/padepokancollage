@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Catch Bird</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- game over-->
+    <div id="game-over">
+        <br><br>
+
+        <img src="bird1.png" width="120">
+        <h1>Game Over</h1>
+		
+        Username : <span id="over-user">abc</span><br>
+        Score :
+        <h1 id="over-score">0</h1>
+        
+        <!-- ini untuk restart -->
+        <button id="simpan">Simpan Score</button>
+        <a href="index.html">Restart</a>
+    
+    </div>
+	
+	<div id="welcome">
+
+        <br><br>
+
+        <img src="bird1.png" width="120">
+        <h1>Catch Bird</h1>
+
+		Masukkan username:<br>
+        <input type="text" id="username"><br>
+
+		Pilih Level:<br>
+		<select id="level">
+			<option>Easy</option>
+			<option>Medium</option>
+			<option>Hard</option>
+		</select><br>
+
+		<button id="mulai">Mulai Game!</button>
+
+		<h3>Leaderboard</h3>
+		<ul id="leaderboard"></ul>
+    
+    </div>
+
+	<div id="out-score">
+
+		Username : <span id="user"></span>
+        |
+        Score : <span id="score">0</span>
+        | 
+        Timer : <span id="time">5</span>
+
+	</div>
+
+	<div id="container"></div>
+
+
+	<script type="text/javascript" src="bird.js"></script>
+</body>
+
+</html>
+
+
+
+
+
